@@ -25,15 +25,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ItemHolder> {
     }
 
     public MainAdapter(Context c) {
-
         context = c;
     }
-
-    public void setList(List<Title> list) {
-        this.list = list;
-        notifyDataSetChanged();
-    }
-
 
     @NonNull
     @Override
@@ -41,6 +34,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ItemHolder> {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.recycler_item, parent, false);
         return new ItemHolder(view);
+    }
+
+    public void setList(List<Title> list) {
+        this.list = list;
+        notifyDataSetChanged();
     }
 
     @Override

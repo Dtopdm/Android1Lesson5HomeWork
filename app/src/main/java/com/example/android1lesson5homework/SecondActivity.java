@@ -39,7 +39,7 @@ public class SecondActivity extends AppCompatActivity {
         });
 
         editText = findViewById(R.id.editText);
-        btnSave = findViewById(R.id.btnResult);
+        btnSave = findViewById(R.id.btnSave);
         getData();
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override

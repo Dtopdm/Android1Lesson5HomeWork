@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MainAdapter(this);
         recyclerView.setAdapter(adapter);
         list = new ArrayList<>();
-        for (int i = 0; i < 40; i++){
-            list.add(new Title("Item " + i +" Список заметок"));
+        for (int i = 1; i < 41; i++){
+            list.add(new Title( i + ":" + " Список заметок"));
         }
 
         adapter.setList(list);

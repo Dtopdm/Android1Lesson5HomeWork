@@ -6,12 +6,8 @@ public class Title implements Serializable {
     public String name;
     public String data;
 
-    public Title(String name, String data) {
-        this.name = name;
-        this.data = data;
-    }
-
     public Title(String name) {
+        this.name = name;
     }
 
     public String getName() {
@@ -22,11 +18,4 @@ public class Title implements Serializable {
         this.name = name;
     }
 
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
-    }
 }
